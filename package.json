@@ -1,0 +1,39 @@
+{
+    "name": "vite-plugin-edge",
+    "version": "0.0.0",
+    "license": "MIT",
+    "description": "Vite plugin for Edge support",
+    "repository": "git@github.com:rrosas1198/vite-plugin-edge.git",
+    "author": "Renzo Rosas",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "prepare": "husky install",
+        "prepack": "unbuild",
+        "changelog": "changelogen",
+        "lint": "eslint --ext .ts .",
+        "lint:fix": "eslint --ext .ts . --fix",
+        "release": "npm run changelog --release && git push --follow-tags && npm publish"
+    },
+    "peerDependencies": {
+        "vite": "^3.1.0"
+    },
+    "dependencies": {
+        "edge.js": "^5.5.0"
+    },
+    "devDependencies": {
+        "@techkit/linter-config": "^0.3.9",
+        "@types/node": "^18.8.3",
+        "changelogen": "^0.3.2",
+        "eslint": "^8.25.0",
+        "eslint-plugin-adonis": "^2.1.1",
+        "husky": "^8.0.1",
+        "typescript": "^4.8.4",
+        "unbuild": "^0.8.11",
+        "vite": "^3.1.6"
+    }
+}
