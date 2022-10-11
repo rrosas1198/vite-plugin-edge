@@ -4,5 +4,19 @@ import edge from "../src";
 
 export default defineConfig({
     root: resolve(__dirname, "src"),
-    plugins: [edge()]
+    plugins: [
+        edge({
+            state: {
+                user: {
+                    username: "virk",
+                    email: "virk@adonisjs.com",
+                    isAdmin: true,
+                    profile: {
+                        avatarUrl: "foo"
+                    },
+                    lastLoginAt: null
+                }
+            }
+        })
+    ]
 });

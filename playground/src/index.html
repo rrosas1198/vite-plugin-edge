@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title></title>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+</head>
 
-    <body></body>
+<body>
+    {{ inspect(state.user) }}
+	@set('time', 'afternoon')
+
+	@component('components/modal', title = 'foo', title = 'bar')
+		@slot('body')
+			<p>hello</p>
+		@endslot
+
+		@slot('actions')
+			@include('partials/button')
+		@endslot
+	@endcomponent
+</body>
 </html>

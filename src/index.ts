@@ -1,7 +1,4 @@
-import { Plugin } from "vite";
+import { edge } from "./plugin";
 
-export default function (): Plugin {
-    return {
-        name: "vite:edge.js"
-    };
-}
+export * from "./interface";
+export default edge;

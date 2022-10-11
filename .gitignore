@@ -1,11 +1,11 @@
 # Compiled output
-/node_modules
+**/node_modules
 
 # Lock files
 package-lock.json*
 
 # Output
-/dist
+**/dist
 
 # Logs
 logs
@@ -16,7 +16,7 @@ npm-debug.log*
 .DS_Store
 
 # Temp
-/tmp
+**/tmp
 
 # Tests
 /coverage

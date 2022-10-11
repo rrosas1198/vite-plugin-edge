@@ -14,6 +14,9 @@
     "emmet.includeLanguages": {
         "edge": "html"
     },
+    "files.associations": {
+        "*.html": "edge"
+    },
     "javascript.suggest.autoImports": true,
     "prettier.configPath": ".prettierrc.js",
     "eslint.validate": ["javascript", "typescript"],
